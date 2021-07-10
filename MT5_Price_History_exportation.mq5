@@ -7,10 +7,10 @@
 //+------------------------------------------------------------------+
 //| Inputs                                                           |
 //+------------------------------------------------------------------+
-input ENUM_TIMEFRAMES in_timeframe = PERIOD_D1;      // Timeframe
+input ENUM_TIMEFRAMES in_timeframe = PERIOD_CURRENT;      // Timeframe
 input string in_filename = "DataHistory.csv";             // Filename
 input datetime in_start_date = D'2021.01.01 00:00';       // Start Date
-input datetime in_end_date   = D'2021.02.01 00:00';       // End Date
+input datetime in_end_date   = D'2021.12.31 00:00';       // End Date
 //+------------------------------------------------------------------+
 //| Script program start function                                    |
 //+------------------------------------------------------------------+
@@ -37,7 +37,7 @@ void OnStart()
   }
 
 //+------------------------------------------------------------------+
-//| Get last bar open, high, low, close                              |
+//| Get bar date, open, high, low, close                              |
 //+------------------------------------------------------------------+
 string GetBarInfo(int bar_number, ENUM_TIMEFRAMES timeframe)
   {
