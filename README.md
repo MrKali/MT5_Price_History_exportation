@@ -2,6 +2,7 @@
 
 Export price history of indices, currencies, stocks and more from MT5 server for external usage
 
+<img src="https://raw.githubusercontent.com/MrKali/MT5_Price_History_exportation/main/resources/Script.PNG?token=AIKIEFALJ55BHU4P5OHEUTLA5ISRQ">
 
 Installation
 ------------
