@@ -17,7 +17,7 @@ input datetime in_end_date   = D'2021.12.31 00:00';       // End Date
 void OnStart()
   {
 
-   string data_history = "datetime, open, high, low, close\n";
+   string data_history = "Datetime,Open,High,Low,Close\n";
    int number_of_bars = Bars(Symbol(), in_timeframe, in_start_date, in_end_date);
    int first_bar_to_look = iBarShift(Symbol(), in_timeframe, in_end_date, false);
   
@@ -47,7 +47,7 @@ string GetBarInfo(int bar_number, ENUM_TIMEFRAMES timeframe)
    string low =  DoubleToString(iLow(Symbol(), timeframe, bar_number));
    string close = DoubleToString(iClose(Symbol(), timeframe, bar_number));
 
-   return date + ", " + open + ", " + high + ", " + low + ", " + close;
+   return date + "," + open + "," + high + "," + low + "," + close;
   }
 
 //+------------------------------------------------------------------+
