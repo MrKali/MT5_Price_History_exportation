@@ -22,6 +22,10 @@ Usage
 |  Filename                                 |  Name of csv file with the data                                      |
 |  Start date                               |  First date start to retrieve price history                          |
 |  End date                                 |  End date to stop retrieve price history                             |
+|  Export open price                        |  If true will export open price                                      |
+|  Export close price                       |  If true will export close price                                     |
+|  Export high price                        |  If true will export high price                                      |
+|  Export low price                         |  If true will export low price                                       |
 
 Features
 --------
